@@ -8,7 +8,6 @@ const user = {
   },
 };
 
-
 console.log(new Date().getFullYear()); //?for getting the current Year.
 
 //& functional programming
@@ -28,4 +27,26 @@ console.log(user.getAgeYear());
 // ? Bundling: data and the behavior that manipulates it live together in one unit.
 // ? Information hiding: internal details are made private, so external code cannot access or modify them directly.
 // ? Controlled access: the object decides how its data may be read or changed, which allows validation and protects its integrity.
+
+//& Abstraction === “Abstraction means hiding implementation details and exposing only the essential features of an object or function.”
+
+//~What if i want to create multiple users ? I again have to create another object, for solving this problem, factory functions came into the Picture.
+
+function createUser(firstName, lastName, age) {
+  const user = {
+    firstName: firstName,
+    lastName: lastName,
+    age: age,
+    getAgeYear() {
+      return new Date().getFullYear() - user.age;
+    },
+  };
+
+  return user;
+}
+
+const user2 = createUser("Keshav", "Sharma", 23);
+
+console.log(user2);
+console.log(user2.getAgeYear());
 
