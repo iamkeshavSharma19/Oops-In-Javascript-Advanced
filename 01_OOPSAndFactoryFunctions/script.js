@@ -46,6 +46,8 @@ function createUser(firstName, lastName, age) {
 }
 
 const user2 = createUser("Keshav", "Sharma", 23);
+const user3 = createUser("Brock", "Lesnar", "47");
+console.log(user2.getAgeYear === user3.getAgeYear);//false.Both getAgeYear functions would be stored at different Memory locations.That's why constructor function came into the Picture.
 
 console.log(user2);
 console.log(user2.getAgeYear());
