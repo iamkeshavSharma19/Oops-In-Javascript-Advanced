@@ -30,3 +30,11 @@ console.log(user1.getAgeYear === user2.getAgeYear); //~true
 const user1AgeYear = user1.getAgeYear();
 console.log(user1AgeYear);
 
+//~Every function has a prototype property
+function sayHii() {
+  console.log(`Hello Keshav`);
+}
+
+console.dir(sayHii);
+//~Every prototype has a by default constructor property,that constructor property represents that function only.
+console.log(sayHii.prototype);
