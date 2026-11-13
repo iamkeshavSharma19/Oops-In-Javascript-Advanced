@@ -29,3 +29,5 @@ console.log(user1.__proto__);
 console.log(User.prototype === user1.__proto__);
 console.log(user1.getBirthYear());
 console.log(user2.getBirthYear());
+
+//? __proto__ === [[Prototype]].These both are one and the same thing.
