@@ -8,6 +8,8 @@ function getAgeYear () {
   return new Date().getFullYear() - this.age;
 }
 
+
+
 function createUser(firstName, lastName, age) {
   const user = {
     firstName,
