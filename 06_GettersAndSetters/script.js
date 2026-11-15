@@ -1,7 +1,5 @@
 console.log("Namaste Javascript");
 
-
-
 const user = {
   firstName: "Harry",
   lastName: "Potter",
